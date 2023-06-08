@@ -1,0 +1,73 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block css %}
+
+<link href="{% static 'core/css/style2.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block contenido %}
+
+<div class="container-fluid py-5">
+    <div class="container">
+      <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px">
+        <h6 class="text-primary text-uppercase">Rastreo</h6>
+        <h1 class="display-5 text-uppercase mb-0">
+          Rastrea tus compras realizadas
+        </h1>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+    <div class="row gx-5 justify-content-start">
+    <article class="card">
+        <header class="card-header"> Mi orden / Rastreo </header>
+        <div class="card-body">
+            <h6>ID de la orden: </h6>
+            <article class="card">
+                <div class="card-body row">
+                    <div class="col"> <strong>Fecha estimada de entrega:</strong> <br>28 de mayo </div>
+                    <div class="col"> <strong>Entregado por:</strong> <br> FeDex, | <i class="fa fa-phone"></i>
+                        +56944443333 </div>
+                    <div class="col"> <strong>Estado:</strong> <br> Orden confirmada</div>
+                    <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
+                </div>
+            </article>
+            <div class="track">
+                <div class="step active"> <span class="icon"> <i class="bi bi-check"></i> </span> <span
+                        class="text">Orden confirmada</span> </div>
+                <div class="step"> <span class="icon"> <i class="bi bi-person"></i> </span> <span class="text">
+                        Retirado por el rapartidor</span> </div>
+                <div class="step"> <span class="icon"> <i class="bi bi-truck"></i> </span> <span class="text"> En camino
+                    </span> </div>
+                <div class="step"> <span class="icon"> <i class="bi bi-box"></i> </span> <span class="text">Producto
+                        recibido</span> </div>
+            </div>
+            <div class="">
+                <div class="product">
+                    <div class="pb-5">
+                        {% for xx in items %}
+                            <div class="d-flex">
+                                <img src="{{ xx.producto.imagen.url }}" alt="" height="100px" width="80px">
+                            </div>
+                            <span> {{ xx.producto.nombre }}  </span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <a href="{% url 'carrito'%}" class="btn btn-warning" data-abc="true"> <i class="fa fa-chevron-left"></i> Volver a ordenes</a>
+        </div>
+    </article>
+</div>
+</div>
+
+{% block js %}
+
+{% endblock %}
+
+
+{% endblock %}

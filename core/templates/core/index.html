@@ -1,0 +1,348 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block contenido %}
+
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+  <div class="container py-5">
+    <div class="row justify-content-start">
+      <div class="col-lg-8 text-center text-lg-start">
+        <h1 class="display-1 text-uppercase text-dark mb-lg-4">MascotaLand</h1>
+        <h1 class="text-uppercase text-white mb-lg-4"> ¡Bienvenidos a nuestra tienda virtual de mascotas!</h1>
+        <p class="fs-4 text-white mb-lg-4">
+         Estamos encantados de recibirte en nuestra Petshop en línea, donde encontrarás todo lo que necesitas para consentir a tu compañero peludo.
+        </p>
+        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+          <a href="" class="btn btn-outline-light border-2 py-md-3 px-md-5 me-5">Ver</a>
+          <button type="button" class="btn-play" data-bs-toggle="modal"
+            data-src="https://www.youtube.com/watch?v=jXWqtVOc8L4&ab_channel=TuPERROFeliz" data-bs-target="#videoModal">
+            <span></span>
+          </button>
+          <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">
+            Play Video
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+
+<!-- Video Modal Start -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- 16:9 aspect ratio -->
+        <div class="ratio ratio-16x9">
+          <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+            allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Video Modal End -->
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px">
+        <div class="position-relative h-100">
+          <img class="position-absolute w-100 h-100 rounded" src="{% static 'core/img/about.jpg' %}"
+            style="object-fit: cover" />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="border-start border-5 border-primary ps-5 mb-5">
+          <h6 class="text-primary text-uppercase">Conocenos</h6>
+          <h1 class="display-5 text-uppercase mb-0">
+            "En nuestra tienda virtual de mascotas"
+          </h1>
+        </div>
+        <h4 class="text-body mb-4">
+        Nos apasiona brindar productos y servicios excepcionales para consentir a tus queridas mascotas. Somos un equipo de amantes de los animales comprometidos con proporcionar la mejor experiencia de compra en línea para ti y tu compañero peludo.
+        </h4>
+        <div class="bg-light p-4">
+          <ul class="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item w-50" role="presentation">
+              <button class="nav-link text-uppercase w-100 active" id="pills-1-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">
+               Nuestra Mision
+              </button>
+            </li>
+            <li class="nav-item w-50" role="presentation">
+              <button class="nav-link text-uppercase w-100" id="pills-2-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">   
+               Nuestra visión
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+              <p class="mb-0">
+             Proporcionar a los amantes de las mascotas productos y servicios de la más alta calidad, fomentando el bienestar y la felicidad de sus compañeros peludos. Nos esforzamos por ser la tienda de mascotas en línea de confianza, brindando una experiencia de compra excepcional, asesoramiento experto y apoyo a causas relacionadas con el bienestar animal. Nuestro objetivo es convertirnos en el destino preferido de todos aquellos que buscan cuidar y consentir a sus mascotas.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+              <p class="mb-0">
+               Es crear una comunidad de amantes de las mascotas comprometidos con el bienestar animal y la responsabilidad hacia nuestras queridas mascotas. Queremos ser reconocidos como líderes en la industria de tiendas de mascotas en línea, ofreciendo un amplio catálogo de productos de calidad, un servicio al cliente excepcional y una plataforma que inspire y eduque a los propietarios de mascotas. Nos esforzamos por marcar la diferencia en la vida de las mascotas y en la relación que tienen con sus dueños, brindando productos innovadores y promoviendo un estilo de vida saludable y activo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+<!-- Services Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px">
+      <h6 class="text-primary text-uppercase">Servicios</h6>
+      <h1 class="display-5 text-uppercase mb-0">
+        Nuestros excelentes servicios de cuidado de mascotas
+      </h1>
+    </div>
+    <div class="row g-5">
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-house display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Alojamiento de mascotas</h5>
+            <p>
+              Este servicio no solo ofrece tranquilidad a los propietarios de mascotas, sino que también brinda a los animales la oportunidad de interactuar con otros compañeros de juegos y recibir la atención y el cariño necesarios durante la ausencia de sus dueños.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-food display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Alimentación de mascotas</h5>
+            <p>
+              La alimentación de mascotas es un aspecto crucial de su cuidado y bienestar general. Proporcionar una alimentación adecuada y equilibrada contribuye a mantener a las mascotas saludables, enérgicas y felices a lo largo de su vida.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-grooming display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Aseo de mascotas</h5>
+            <p>
+              El aseo de mascotas abarca diferentes aspectos, como el baño, cepillado, corte de uñas, limpieza de oídos, cuidado dental y arreglo de pelo. Estas tareas ayudan a prevenir problemas de salud, como la acumulación de suciedad, mal olor, infecciones de piel, problemas dentales y otros trastornos relacionados con la falta de higiene.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-cat display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Entrenamiento de mascotas</h5>
+            <p>
+              El entrenamiento de mascotas es un proceso que busca educar y enseñar a las mascotas comportamientos adecuados y habilidades necesarias para una convivencia armoniosa. A través del uso de técnicas de refuerzo positivo y la construcción de una relación basada en la confianza, el entrenamiento de mascotas promueve la comunicación efectiva y fortalece los lazos entre los animales y sus propietarios.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-dog display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Ejercicio para mascotas</h5>
+            <p>
+              El ejercicio para mascotas es esencial para su salud y bienestar general. Proporcionar actividades físicas adecuadas y regulares ayuda a las mascotas a mantenerse activas, en forma y felices. Además, el ejercicio fortalece la relación entre los dueños y sus adorables compañeros peludos, al tiempo que promueve una vida saludable y activa para ambos.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="service-item bg-light d-flex p-4">
+          <i class="flaticon-vaccine display-1 text-primary me-4"></i>
+          <div>
+            <h5 class="text-uppercase mb-3">Tratamiento de mascotas</h5>
+            <p>
+              El tratamiento de mascotas abarca todos los aspectos relacionados con el cuidado médico y terapéutico de los animales domésticos. Proporciona los medios necesarios para diagnosticar, tratar y prevenir enfermedades, lesiones y afecciones, y garantiza que las mascotas reciban la atención y el cuidado adecuados para una vida saludable y feliz.
+            </p>
+            <a class="text-primary text-uppercase" href="{% url 'service'%}">Ver Mas<i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services End -->
+
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px">
+      <h6 class="text-primary text-uppercase">Productos</h6>
+      <h1 class="display-5 text-uppercase mb-0">
+        Productos para tus mejores amigos
+      </h1>
+    </div>
+  </div>
+</div>
+
+<!-- Products Start -->
+<div class="container">
+  <div class="row gx-5 justify-content-start">
+    {% for aux in listado %} {% if aux.vigente == 1 %}
+    <div class="col-md-6 col-lg-3">
+      <div class="product">
+        <div class="pb-5">
+          <div class="product-item position-relative bg-light d-flex flex-column text-center">
+            {% if aux.imagen %}
+            <img class="img-fluid mb-4" src="{{ aux.imagen.url }}" alt="Imagen no encontrada if" />
+            {% else %}
+            <img class="img-fluid mb-4" src="{% static 'core/img/about.jpg' %}" alt="Imagen no encontrada else" />
+            {% endif %}
+            <h6 class="text-uppercase">{{ aux.nombre }}</h6>
+            <h5 class="text-primary mb-0">${{ aux.precio }}</h5>
+            <div class="btn-action d-flex justify-content-center">
+              {% if user.username == "admin" %}
+				        <a class="btn btn-primary py-2 px-3" href="{% url 'carrito'%}"><i class="bi bi-cart"></i></a>
+				        <a class="btn btn-primary py-2 px-3" href="{% url 'update' aux.id %}"><i class="bi bi-eye"></i></a>
+                <a onclick="deleteProducto({{ aux.id }})" class="btn btn-primary py-2 px-3"><span><i class="bi bi-trash"></i></span></a>
+                {% else %}
+				        <a class="btn btn-primary py-2 px-3" href="{% url 'login'%}"><i class="bi bi-cart"></i></a>
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  {% include 'core/paginator.html' %}
+</div>
+<!-- Products End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid bg-testimonial py-5" style="margin: 45px 0">
+  <div class="container py-5">
+    <div class="row justify-content-end">
+      <div class="col-lg-7">
+        <div class="owl-carousel testimonial-carousel bg-white p-5">
+          <div class="testimonial-item text-center">
+            <div class="position-relative mb-4">
+              <img class="img-fluid mx-auto" src="{% static 'core/img/testimonial-1.jpg' %}" alt="" />
+              <div
+                class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white"
+                style="width: 45px; height: 45px">
+                <i class="bi bi-chat-square-quote text-primary"></i>
+              </div>
+            </div>
+            <p>
+              "¡Estoy encantada con la tienda de mascotas! Siempre encuentro todo lo que necesito para mi perro y a precios muy convenientes. Los descuentos en los productos me ayudan a ahorrar dinero sin comprometer la calidad. Además, el equipo de la tienda es amable y conocedor, siempre dispuesto a brindar recomendaciones y asesoramiento. Mi perro está feliz con los juguetes y alimentos que le compro aquí. Definitivamente, recomendaría esta tienda a todos los amantes de las mascotas".
+            </p>
+            <hr class="w-25 mx-auto" />
+            <h5 class="text-uppercase">Ana M.</h5>
+            <span>Profession</span>
+          </div>
+          <div class="testimonial-item text-center">
+            <div class="position-relative mb-4">
+              <img class="img-fluid mx-auto" src="{% static 'core/img/testimonial-2.jpg' %}" alt="" />
+              <div
+                class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white"
+                style="width: 45px; height: 45px">
+                <i class="bi bi-chat-square-quote text-primary"></i>
+              </div>
+            </div>
+            <p>
+              "Encontrar una tienda de mascotas confiable y asequible ha sido un verdadero desafío, ¡hasta que descubrí esta tienda! Estoy completamente satisfecha con la amplia selección de productos de calidad y los descuentos que ofrecen. El personal es muy servicial y siempre está dispuesto a responder a mis preguntas y brindar recomendaciones personalizadas. Además, su servicio de entrega es rápido y confiable, lo cual es muy conveniente para mí. ¡Mis gatos están felices y saludables gracias a los productos que compro aquí! No puedo recomendar esta tienda lo suficiente".
+            </p>
+            <hr class="w-25 mx-auto" />
+            <h5 class="text-uppercase">Carlos G.</h5>
+            <span>Profession</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Blog Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px">
+      <h6 class="text-primary text-uppercase">Blog más reciente</h6>
+      <h1 class="display-5 text-uppercase mb-0">
+        Últimos artículos de nuestra publicación de blog
+      </h1>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <div class="blog-item">
+          <div class="row g-0 bg-light overflow-hidden">
+            <div class="col-12 col-sm-5 h-100">
+              <img class="img-fluid h-100" src="{% static 'core/img/blog-2.jpg' %}"style="object-fit: cover" />
+            </div>
+            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+              <div class="p-4">
+                <div class="d-flex mb-3">
+                  <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Diseño web</small>
+                  <small><i class="bi bi-calendar-date me-2"></i>20 Mayo,
+                    2023</small>
+                </div>
+                <h5 class="text-uppercase mb-3">
+                  Ejercicio físico
+                </h5>
+                <p>
+                El juegos interactivo brinda a tu mascota la oportunidad de moverse, correr y saltar, lo que ayuda a mantener un peso saludable y fortalece los músculos y las articulaciones.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="blog-item">
+          <div class="row g-0 bg-light overflow-hidden">
+            <div class="col-12 col-sm-5 h-100">
+              <img class="img-fluid h-100" src="{% static 'core/img/blog-1.jpg' %}" style="object-fit: cover" />
+            </div>
+            <div class="col-12 col-sm-7 h-100 d-flex flex-column justify-content-center">
+              <div class="p-4">
+                <div class="d-flex mb-3">
+                  <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Diseño Web</small>
+                  <small><i class="bi bi-calendar-date me-2"></i>01 Abril,
+                    2023</small>
+                </div>
+                <h5 class="text-uppercase mb-3">
+                  Elegir el alimento adecuado
+                </h5>
+                <p>
+                  Cada mascota es única y tiene requisitos dietéticos específicos. Considera su edad, tamaño, raza, nivel de actividad y cualquier condición médica existente. Consulta a tu veterinario para obtener recomendaciones personalizadas.
+                </p>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+
+{% endblock %}
+</div>
