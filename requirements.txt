@@ -8,5 +8,6 @@ paypal-checkout-serversdk
 pymysql
 mysqlclient
 django-jazzmin
+django-extensions
 
 ##  pip install -r requirements.txt
